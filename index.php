@@ -39,6 +39,8 @@
             <img src="./dist/images/image-2.jpg" alt="Space Invader">
             <img src="./dist/images/image-3.jpg" alt="Gaming PC">
         </div>
+
+        <?php require_once('./steamapi.php'); ?>
     </div>
 </body>
 </html>
