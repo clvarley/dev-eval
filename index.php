@@ -45,7 +45,6 @@
             <img src="./dist/images/image-3.jpg" alt="Gaming PC">
         </div>
 
-        <?php require_once('./steamapi.php'); ?>
     </div>
 </body>
 </html>
