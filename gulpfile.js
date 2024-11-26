@@ -75,7 +75,7 @@ gulp.task('cachebust', () => {
 
 // Compile Sass
 gulp.task('sass-frontend', function() {
-    return gulp.src(srcDir + '/scss/style.scss')
+    return gulp.src([srcDir + '/scss/**/*.scss'])  // Match all .scss files
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(autoprefixer())
@@ -111,7 +111,7 @@ gulp.task('images', function() {
 
 // Minify CSS
 gulp.task('minify-css',function() {
-    return gulp.src(destDir + '/css/style.min.css')
+    return gulp.src(srcDir + '/scss/style.scss')
     .pipe(cleanCSS())
     .pipe(gulp.dest(destDir + '/css'));
 });
