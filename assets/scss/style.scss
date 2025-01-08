@@ -10,16 +10,22 @@ body {
     h1 {
         font-size: 40px;
         margin-bottom: 20px;
+        line-height: 1.2;
     }
 
     h2 {
         font-size: 30px;
         margin-top: 20px;
+        line-height: 1.2;
     }
 
     p {
         font-size: 18px;
         line-height: 28px;
+    }
+
+    img {
+        height: auto;
     }
     
     .hero {
@@ -39,7 +45,6 @@ body {
         gap: 30px;
 
         img {
-            height: auto;
             max-width: 585px;
             width: 100%;
         }

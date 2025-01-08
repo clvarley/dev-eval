@@ -9,6 +9,8 @@
         <?php echo file_get_contents('./dist/css/critical.min.css'); ?>
     </style>
 
+    <link rel="preload" href="./dist/images/image-1.jpg" as="image" type="image/jpeg" />
+
     <!-- https://fonts.google.com/specimen/Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,11 +20,11 @@
 </head>
 <body>
     <div class="container">
-        <img src="./dist/images/logo.svg" alt="Logo" loading="lazy">
+        <img src="./dist/images/logo.svg" alt="Ipsum" width="169" height="40" />
     
         <h1>Developer Test</h1>
     
-        <img class="hero" src="./dist/images/image-1.jpg" alt="Gaming Accessories" loading="lazy">
+        <img class="hero" src="./dist/images/image-1.jpg" alt="" width="1920" height="1080" />
 
         <h2>Lorem ipsum dolor</h2>
 
@@ -43,10 +45,21 @@
         </div>
 
         <div class="images">
-            <img src="./dist/images/image-2.jpg" alt="Space Invader">
-            <img src="./dist/images/image-3.jpg" alt="Gaming PC">
+            <img
+                src="./dist/images/image-2.jpg"
+                alt="A single Space Invader on a brick wall"
+                loading="lazy"
+                width="1920"
+                height="1080"
+            />
+            <img
+                src="./dist/images/image-3.jpg"
+                alt="A gaming PC setup with multiple screens"
+                loading="lazy"
+                width="1920"
+                height="1080"
+            />
         </div>
-
     </div>
 </body>
 </html>
