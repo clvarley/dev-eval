@@ -4,10 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Developer Test</title>
-    
-    <style>
-        <?php echo file_get_contents('./dist/css/critical.min.css'); ?>
-    </style>
 
     <link rel="preload" href="./dist/images/image-1.jpg" as="image" type="image/jpeg" />
 
@@ -16,10 +12,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
+    <style>
+        <?php echo file_get_contents('./dist/css/critical.min.css'); ?>
+    </style>
+
     <link rel="stylesheet" href="./dist/css/style.min.css">
 </head>
 <body>
-    <div class="container">
+    <main class="container">
         <img src="./dist/images/logo.svg" alt="Ipsum" width="169" height="40" />
     
         <h1>Developer Test</h1>
@@ -60,6 +60,6 @@
                 height="1080"
             />
         </div>
-    </div>
+    </main>
 </body>
 </html>
