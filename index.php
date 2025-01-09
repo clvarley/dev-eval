@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Developer Test</title>
-    
+
+    <link rel="preload" href="./dist/images/image-1.jpg" as="image" type="image/jpeg" />
+
     <!-- https://fonts.google.com/specimen/Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
         <?php echo file_get_contents('./dist/css/critical.min.css'); ?>
     </style>
@@ -17,12 +19,12 @@
     <link rel="stylesheet" href="./dist/css/style.min.css">
 </head>
 <body>
-    <div class="container">
-        <img src="./dist/images/logo.svg" alt="Logo" loading="lazy">
+    <main class="container">
+        <img src="./dist/images/logo.svg" alt="Ipsum" width="169" height="40" />
     
         <h1>Developer Test</h1>
     
-        <img class="hero" src="./dist/images/image-1.jpg" alt="Gaming Accessories" loading="lazy">
+        <img class="hero" src="./dist/images/image-1.jpg" alt="" width="1920" height="1080" />
 
         <h2>Lorem ipsum dolor</h2>
 
@@ -43,10 +45,21 @@
         </div>
 
         <div class="images">
-            <img src="./dist/images/image-2.jpg" alt="Space Invader">
-            <img src="./dist/images/image-3.jpg" alt="Gaming PC">
+            <img
+                src="./dist/images/image-2.jpg"
+                alt="A single Space Invader on a brick wall"
+                loading="lazy"
+                width="1920"
+                height="1080"
+            />
+            <img
+                src="./dist/images/image-3.jpg"
+                alt="A gaming PC setup with multiple screens"
+                loading="lazy"
+                width="1920"
+                height="1080"
+            />
         </div>
-
-    </div>
+    </main>
 </body>
 </html>

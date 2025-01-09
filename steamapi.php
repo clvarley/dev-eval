@@ -20,10 +20,17 @@
     <div class="container">
     <?php
 
-    $steamData = file_get_contents('https://api.steampowered.com/ISteamApps/GetAppList/v2/');
-    $steamData = json_decode($steamData, true);
-    foreach ($steamData['applist']['apps'] as $app) {
-        echo $app['appid'] . ' - ' . $app['name'] . '<br>'.PHP_EOL;
+    require_once './src/SteamApi.php';
+
+    $steamApps = NetworkN\SteamApi::fetchApps();
+
+    foreach ($steamApps as $app) {
+        printf(
+            '%d - %s<br/>%s',
+            $app['appid'],
+            htmlentities($app['name'], ENT_QUOTES|ENT_HTML5),
+            PHP_EOL
+        );
     }
 
     ?>
