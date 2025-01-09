@@ -9,6 +9,9 @@ node_modules/
 # Compiled + minimised styles and JS
 dist/
 
+# API cache
+steam-api.cache.json
+
 # Compiled Java class files
 *.class
 
